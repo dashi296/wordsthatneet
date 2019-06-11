@@ -48,7 +48,7 @@ class App extends React.Component {
   }
 
   downloadImage(){
-    
+    window.scrollTo(0,0);
     html2canvas(document.querySelector("#container")).then(canvas => {
     let link = document.createElement("a");
     link.href = canvas.toDataURL("image/png");
