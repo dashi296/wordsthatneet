@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "925b2b692bb1680d6e3011a96659a913",
+    "revision": "4e87bbcce81f29ddcfa4c9b520aa9be8",
     "url": "/wordsthatneet/index.html"
   },
   {
-    "revision": "f5b31fb5b093e6101763",
+    "revision": "f71a5f1a4529fffb72de",
     "url": "/wordsthatneet/static/css/main.073e32c7.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/wordsthatneet/static/js/2.e4ee3b88.chunk.js"
   },
   {
-    "revision": "f5b31fb5b093e6101763",
-    "url": "/wordsthatneet/static/js/main.f6c93ce8.chunk.js"
+    "revision": "f71a5f1a4529fffb72de",
+    "url": "/wordsthatneet/static/js/main.a6d911c4.chunk.js"
   },
   {
     "revision": "8e7ff150aa9025f436a9",
