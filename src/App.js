@@ -49,12 +49,36 @@ class App extends React.Component {
 
   downloadImage(){
     window.scrollTo(0,0);
-    html2canvas(document.querySelector("#container")).then(canvas => {
-    let link = document.createElement("a");
-    link.href = canvas.toDataURL("image/png");
-    link.download = "words.png";
-    link.click();
+    let temp_words = this.state.words_html;
+    let words_html = temp_words.replace(/ー/g, '<span class="rotate">ー</span>');
+    
+    let temp_sector = this.state.sector;
+    let sector_html = temp_sector.replace(/ー/g, '<span class="rotate">ー</span>');
+    
+    let temp_job = this.state.job;
+    let job_html = temp_job.replace(/ー/g, '<span class="rotate">ー</span>');
+
+    this.setState(
+      {
+        words_html: words_html,
+        sector: sector_html,
+        job: job_html
+      }, function () {
+      console.log(this.state.words_html);
+      html2canvas(document.querySelector("#container")).then(canvas => {
+      let link = document.createElement("a");
+      link.href = canvas.toDataURL("image/png");
+      link.download = "words.png";
+      link.click();
+
+      this.setState({
+        words_html: temp_words,
+        sector: temp_sector,
+        job: temp_job
+        });
+      });
     });
+    
   }
 
   render(){
@@ -93,9 +117,9 @@ class App extends React.Component {
               <div id="canvas">
               <Words words={this.state.words_html} />
               <div className="user-info">
-                <span className="sector">{this.state.sector}</span>
+                <span className="sector" dangerouslySetInnerHTML={{__html: this.state.sector}}></span>
                 { this.state.sector && this.state.job && <span>／</span> }
-                <span className="job">{this.state.job}</span>
+                <span className="job" dangerouslySetInnerHTML={{__html: this.state.job}}></span>
                 { this.state.job && this.state.age && <span>・</span> }
                 { this.state.age && <span className="age"><span className="text-combine">{this.state.age}</span>代</span>}
               </div>
