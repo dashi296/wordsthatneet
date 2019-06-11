@@ -40,18 +40,26 @@ body {
   font-size: 62.5%;
 }
 
-#capture{
-    width: 90%;
-    height:90%;
-    min-height: 345px;
-    border-color:#027c6c;
-    position: relative;
-    box-sizing: border-box;
-    border: 25px solid #35a740;
-    border-width: 10px;
+#root{
+  margin:0 auto;
+}
 
-    color:#027c6c;
-    font-family: "游明朝", YuMincho,"ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝","ＭＳ 明朝", serif;
+.canvas-container{
+  width: 90%;
+  height:90%;
+  max-width: 400px;
+}
+
+#canvas{  
+  min-height: 345px;
+  border-color:#027c6c;
+  position: relative;
+  box-sizing: border-box;
+  border: 25px solid #35a740;
+  border-width: 10px;
+  padding:20px;
+  color:#027c6c;
+  font-family: "游明朝", YuMincho,"ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝","ＭＳ 明朝", serif;
 }
 
 .words{
@@ -61,6 +69,7 @@ body {
 
   top: 77.25px;
   max-height: 249px;
+  
   font-size: 12px;
   letter-spacing: 1.8px;
   line-height: 23px;
@@ -84,6 +93,11 @@ body {
   text-combine-upright: all;
 }
 
+.heading{
+  text-align: center;
+  font-family: "游明朝", YuMincho,"ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝","ＭＳ 明朝", serif;
+}
+
 .title{
   font-size: 1.5em;
   letter-spacing: 2px;
@@ -94,8 +108,76 @@ body {
   -ms-writing-mode: tb-rl;
   writing-mode: vertical-rl;
 }
+
 .container{
   display: flex;
   flex-direction: row;
-  margin:20px;
+  align-items: baseline;
+  justify-content: center;
+  padding: 50px;
+  margin: 0 auto;
+}
+
+.date{
+  line-height: 3.6;
+  color:#027c6c;
+  font-family: "游明朝", YuMincho,"ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝","ＭＳ 明朝", serif;
+}
+
+.input-field{
+  width: 60%;
+  margin:0 auto;
+}
+
+textarea{
+	font: 15px/20px sans-serif;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 0.3em;
+	transition: 0.3s;
+	letter-spacing: 1px;
+	color: #555555;
+	border: 1px solid #1b2538;
+	border-radius: 4px;
+  margin-bottom: 15px;
+}
+textarea:focus {
+	border: 1px solid #da3c41;
+	outline: none;
+	box-shadow: 0 0 5px 1px rgba(218,60,65, .5);
+}
+
+input[type='text'] {
+	font: 15px/20px sans-serif;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 0.3em;
+	transition: 0.3s;
+	letter-spacing: 1px;
+	color: #555555;
+	border: 1px solid #1b2538;
+	border-radius: 4px;
+  margin-bottom: 15px;
+}
+input[type='text']:focus {
+	border: 1px solid #da3c41;
+	outline: none;
+	box-shadow: 0 0 5px 1px rgba(218,60,65, .5);
+}
+
+select {
+	box-sizing: border-box;
+	width: 100%;
+	padding: 0.3em;
+	transition: 0.3s;
+	letter-spacing: 1px;
+	color: #555555;
+	border: 1px solid #1b2538;
+	border-radius: 4px;
+  margin-bottom: 15px;
+}
+select:focus {
+	border: 1px solid #da3c41;
+	outline: none;
+	box-shadow: 0 0 5px 1px rgba(218,60,65, .5);
 }

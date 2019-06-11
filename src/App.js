@@ -1,14 +1,27 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import html2canvas from "html2canvas";
 
 import Words from './Words.js';
 
 class App extends React.Component {
   constructor(props){
     super(props);
+    let today = new Date();
+    let year = today.getFullYear();
+    let month = ("0"+(today.getMonth() + 1)).slice(-2);
+    let day = ("0"+(today.getDay())).slice(-2); 
     this.state = {
-      
+      words: "働きたくないでござる",
+      words_html:"働きたくないでござる",
+      sector: "自宅警備員",
+      job: "開発",
+      age: "20",
+      year: year,
+      month: month,
+      day: day,
+      image: ""
     }
 
     this.handleChangeWords = this.handleChangeWords.bind(this);
@@ -22,7 +35,6 @@ class App extends React.Component {
     let words_html = words.replace(/\r?\n/g, '<br>');
     
     this.setState({words: words, words_html: words_html});
-    console.log(this.state);
   }
 
   handleChangeSector(e){
@@ -40,10 +52,22 @@ class App extends React.Component {
     this.setState({age: age});
   }
 
+  downloadImage(){
+    
+    html2canvas(document.querySelector("#canvas")).then(canvas => {
+    //this.setState({image: canvas.toDataURL()});
+    let link = document.createElement("a");
+    link.href = canvas.toDataURL("image/png");
+    link.download = "words.png";
+    link.click();
+    });
+    console.log(this.state.image);
+  }
+
   render(){
     return (
       <React.Fragment>
-        <h1>言葉たちメーカー</h1>
+        <h1 className="heading">はたらかない言葉たちメーカー</h1>
         <div className="input-field">
           <label>言葉</label>
           <textarea name="words" value={this.state.words} onChange={(e)=>this.handleChangeWords(e)} placeholder="here" />
@@ -61,21 +85,31 @@ class App extends React.Component {
             <option value="20">20代</option>
             <option value="30">30代</option>
             <option value="40">40代</option>
+            <option value="50">50代</option>
+            <option value="60">60代</option>
+            <option value="70">70代</option>
+            <option value="80">80代</option>
+            <option value="90">90代</option>
           </select>
+          <input type="submit" value="submit" onClick={()=>this.downloadImage()} />
         </div>
 
         <div className="container">
-          <div className="title">ガチニートの言葉たち</div>
-          <div id="capture">
-            <Words words={this.state.words_html} />
-            <div className="user-info">
-              <span className="sector">{this.state.sector}</span>
-              { this.state.sector && this.state.job && <span>／</span> }
-              <span className="job">{this.state.job}</span>
-              { this.state.job && this.state.age && <span>・</span> }
-              { this.state.age && <span className="age"><span className="text-combine">{this.state.age}</span>代</span>}
+          <div className="title">はたらかない言葉たち</div>
+            <div className="canvas-container">
+              <div id="canvas">
+              <Words words={this.state.words_html} />
+              <div className="user-info">
+                <span className="sector">{this.state.sector}</span>
+                { this.state.sector && this.state.job && <span>／</span> }
+                <span className="job">{this.state.job}</span>
+                { this.state.job && this.state.age && <span>・</span> }
+                { this.state.age && <span className="age"><span className="text-combine">{this.state.age}</span>代</span>}
+              </div>
             </div>
+            <div className="date">{this.state.year}. {this.state.month}. {this.state.day}</div>
           </div>
+          
         </div>
       </React.Fragment>
     );
