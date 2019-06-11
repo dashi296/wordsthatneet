@@ -60,16 +60,16 @@ class App extends React.Component {
   render(){
     return (
       <React.Fragment>
-        <h1 className="heading">はたらかない言葉たちメーカー</h1>
+        <h1 className="heading">働かない言葉たちメーカー</h1>
         <div className="input-field">
           <label>言葉</label>
-          <textarea name="words" value={this.state.words} onChange={(e)=>this.handleChangeWords(e)} placeholder="here" />
+          <textarea name="words" value={this.state.words} onChange={(e)=>this.handleChangeWords(e)} placeholder="ことば" />
           <br />
           <label>業種</label>
-          <input type="text" value={this.state.sector} onChange={(e)=>this.handleChangeSector(e)} placeholder="sector" />
+          <input type="text" value={this.state.sector} onChange={(e)=>this.handleChangeSector(e)} placeholder="業種" />
           <br />
           <label>職種</label>
-          <input type="text" value={this.state.job} onChange={(e)=>this.handleChangeJob(e)} placeholder="job" />
+          <input type="text" value={this.state.job} onChange={(e)=>this.handleChangeJob(e)} placeholder="職種" />
           <br />
           <label>年齢</label>
           <select value={this.state.age} onChange={(e)=>this.handleChangeAge(e)}>
@@ -84,11 +84,11 @@ class App extends React.Component {
             <option value="80">80代</option>
             <option value="90">90代</option>
           </select>
-          <input type="submit" value="submit" onClick={()=>this.downloadImage()} />
+          <input type="submit" value="Download" onClick={()=>this.downloadImage()} />
         </div>
 
         <div id="container">
-          <div className="title">はたらかない言葉たち</div>
+          <div className="title">働かない言葉たち</div>
             <div id="canvas-container">
               <div id="canvas">
               <Words words={this.state.words_html} />
