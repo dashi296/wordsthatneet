@@ -55,13 +55,11 @@ class App extends React.Component {
   downloadImage(){
     
     html2canvas(document.querySelector("#canvas")).then(canvas => {
-    //this.setState({image: canvas.toDataURL()});
     let link = document.createElement("a");
     link.href = canvas.toDataURL("image/png");
     link.download = "words.png";
     link.click();
     });
-    console.log(this.state.image);
   }
 
   render(){

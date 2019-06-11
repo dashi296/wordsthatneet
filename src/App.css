@@ -45,20 +45,15 @@ body {
 }
 
 .canvas-container{
-  width: 90%;
-  height:90%;
-  max-width: 400px;
+  width:auto;
 }
 
 #canvas{  
-  min-height: 345px;
-  border-color:#027c6c;
+  width: 400px;
+  height: 345px;
   position: relative;
-  box-sizing: border-box;
-  border: 25px solid #35a740;
-  border-width: 10px;
-  padding:20px;
-  color:#027c6c;
+  border: 10px solid #35a740;
+  color:#35a740;
   font-family: "游明朝", YuMincho,"ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝","ＭＳ 明朝", 'Noto Serif JP', serif;
 }
 
