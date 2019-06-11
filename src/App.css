@@ -59,7 +59,7 @@ body {
   border-width: 10px;
   padding:20px;
   color:#027c6c;
-  font-family: "游明朝", YuMincho,"ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝","ＭＳ 明朝", 'Sawarabi Mincho','Noto Serif JP', serif;
+  font-family: "游明朝", YuMincho,"ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝","ＭＳ 明朝", 'Noto Serif JP', serif;
 }
 
 .words{
@@ -95,7 +95,7 @@ body {
 
 .heading{
   text-align: center;
-  font-family: "游明朝", YuMincho,"ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝","ＭＳ 明朝",'Sawarabi Mincho','Noto Serif JP', serif;
+  font-family: "游明朝", YuMincho,"ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝","ＭＳ 明朝" ,'Noto Serif JP', serif;
 }
 
 .title{
@@ -103,7 +103,7 @@ body {
   letter-spacing: 2px;
   color:#027c6c;
   margin-right:10px;
-  font-family: "游明朝", YuMincho,"ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝","ＭＳ 明朝",'Sawarabi Mincho','Noto Serif JP', serif;
+  font-family: "游明朝", YuMincho,"ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝","ＭＳ 明朝" ,'Noto Serif JP', serif;
   -webkit-writing-mode: vertical-rl;
   -ms-writing-mode: tb-rl;
   writing-mode: vertical-rl;
@@ -121,7 +121,7 @@ body {
 .date{
   line-height: 3.6;
   color:#027c6c;
-  font-family: "游明朝", YuMincho,"ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝","ＭＳ 明朝",'Sawarabi Mincho','Noto Serif JP', serif;
+  font-family: "游明朝", YuMincho,"ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝","ＭＳ 明朝" ,'Noto Serif JP', serif;
 }
 
 .input-field{
