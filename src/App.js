@@ -13,11 +13,6 @@ class App extends React.Component {
     let month = ("0"+(today.getMonth() + 1)).slice(-2);
     let day = ("0"+(today.getDay())).slice(-2); 
     this.state = {
-      words: "働きたくないでござる",
-      words_html:"働きたくないでござる",
-      sector: "自宅警備員",
-      job: "開発",
-      age: "20",
       year: year,
       month: month,
       day: day,
@@ -54,7 +49,7 @@ class App extends React.Component {
 
   downloadImage(){
     
-    html2canvas(document.querySelector("#canvas")).then(canvas => {
+    html2canvas(document.querySelector("#container")).then(canvas => {
     let link = document.createElement("a");
     link.href = canvas.toDataURL("image/png");
     link.download = "words.png";
@@ -92,9 +87,9 @@ class App extends React.Component {
           <input type="submit" value="submit" onClick={()=>this.downloadImage()} />
         </div>
 
-        <div className="container">
+        <div id="container">
           <div className="title">はたらかない言葉たち</div>
-            <div className="canvas-container">
+            <div id="canvas-container">
               <div id="canvas">
               <Words words={this.state.words_html} />
               <div className="user-info">
