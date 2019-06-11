@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/wordsthatneet/static/css/main.073e32c7.chunk.css",
-    "main.js": "/wordsthatneet/static/js/main.6b658cec.chunk.js",
-    "main.js.map": "/wordsthatneet/static/js/main.6b658cec.chunk.js.map",
+    "main.css": "/wordsthatneet/static/css/main.739dc671.chunk.css",
+    "main.js": "/wordsthatneet/static/js/main.359adf7d.chunk.js",
+    "main.js.map": "/wordsthatneet/static/js/main.359adf7d.chunk.js.map",
     "runtime~main.js": "/wordsthatneet/static/js/runtime~main.a1ddf4ea.js",
     "runtime~main.js.map": "/wordsthatneet/static/js/runtime~main.a1ddf4ea.js.map",
     "static/js/2.e4ee3b88.chunk.js": "/wordsthatneet/static/js/2.e4ee3b88.chunk.js",
     "static/js/2.e4ee3b88.chunk.js.map": "/wordsthatneet/static/js/2.e4ee3b88.chunk.js.map",
     "index.html": "/wordsthatneet/index.html",
-    "precache-manifest.2bd2f9a8dafea65a66fbd9f3faa4e743.js": "/wordsthatneet/precache-manifest.2bd2f9a8dafea65a66fbd9f3faa4e743.js",
+    "precache-manifest.b10dcb10017af1330bf8b7269df4bf65.js": "/wordsthatneet/precache-manifest.b10dcb10017af1330bf8b7269df4bf65.js",
     "service-worker.js": "/wordsthatneet/service-worker.js",
-    "static/css/main.073e32c7.chunk.css.map": "/wordsthatneet/static/css/main.073e32c7.chunk.css.map",
+    "static/css/main.739dc671.chunk.css.map": "/wordsthatneet/static/css/main.739dc671.chunk.css.map",
     "static/media/logo.svg": "/wordsthatneet/static/media/logo.5d5d9eef.svg"
   }
 }
