@@ -31,3 +31,71 @@
     transform: rotate(360deg);
   }
 }
+
+html{
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 62.5%;
+}
+
+#capture{
+    width: 90%;
+    height:90%;
+    min-height: 345px;
+    border-color:#027c6c;
+    position: relative;
+    box-sizing: border-box;
+    border: 25px solid #35a740;
+    border-width: 10px;
+
+    color:#027c6c;
+    font-family: "游明朝", YuMincho,"ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝","ＭＳ 明朝", serif;
+}
+
+.words{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+
+  top: 77.25px;
+  max-height: 249px;
+  font-size: 12px;
+  letter-spacing: 1.8px;
+  line-height: 23px;
+
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+}
+
+.user-info{
+  position: absolute;
+  bottom: 13px;
+  left: 12px;
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  font-size: 1em;
+}
+
+.text-combine{
+  text-combine-upright: all;
+}
+
+.title{
+  font-size: 1.5em;
+  letter-spacing: 2px;
+  color:#027c6c;
+  margin-right:10px;
+  font-family: "游明朝", YuMincho,"ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝","ＭＳ 明朝", serif;
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+}
+.container{
+  display: flex;
+  flex-direction: row;
+  margin:20px;
+}
