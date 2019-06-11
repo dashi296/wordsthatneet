@@ -118,7 +118,7 @@ class App extends React.Component {
               <Words words={this.state.words_html} />
               <div className="user-info">
                 <span className="sector" dangerouslySetInnerHTML={{__html: this.state.sector}}></span>
-                { this.state.sector && this.state.job && <span>／</span> }
+                { this.state.sector && this.state.job && <span class="non-vertical">/</span> }
                 <span className="job" dangerouslySetInnerHTML={{__html: this.state.job}}></span>
                 { this.state.job && this.state.age && <span>・</span> }
                 { this.state.age && <span className="age"><span className="text-combine">{this.state.age}</span>代</span>}

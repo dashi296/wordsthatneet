@@ -83,10 +83,18 @@ body {
   -ms-writing-mode: tb-rl;
   writing-mode: vertical-rl;
   font-size: 1em;
+  letter-spacing: .7px;
 }
 
 .text-combine{
   text-combine-upright: all;
+  letter-spacing: 0;
+}
+
+.non-vertical{
+  -webkit-writing-mode: horizontal-tb;
+  writing-mode: horizontal-tb;
+  line-height: 1;
 }
 
 .heading{
