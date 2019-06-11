@@ -11,7 +11,7 @@ class App extends React.Component {
     let today = new Date();
     let year = today.getFullYear();
     let month = ("0"+(today.getMonth() + 1)).slice(-2);
-    let day = ("0"+(today.getDay())).slice(-2); 
+    let day = ("0"+(today.getDate())).slice(-2); 
     this.state = {
       year: year,
       month: month,
