@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/wordsthatneet/static/css/main.974578b4.chunk.css",
-    "main.js": "/wordsthatneet/static/js/main.13268f81.chunk.js",
-    "main.js.map": "/wordsthatneet/static/js/main.13268f81.chunk.js.map",
+    "main.css": "/wordsthatneet/static/css/main.10ca8cf6.chunk.css",
+    "main.js": "/wordsthatneet/static/js/main.e6090e23.chunk.js",
+    "main.js.map": "/wordsthatneet/static/js/main.e6090e23.chunk.js.map",
     "runtime~main.js": "/wordsthatneet/static/js/runtime~main.a1ddf4ea.js",
     "runtime~main.js.map": "/wordsthatneet/static/js/runtime~main.a1ddf4ea.js.map",
-    "static/js/2.4e81ba5b.chunk.js": "/wordsthatneet/static/js/2.4e81ba5b.chunk.js",
-    "static/js/2.4e81ba5b.chunk.js.map": "/wordsthatneet/static/js/2.4e81ba5b.chunk.js.map",
+    "static/js/2.e4ee3b88.chunk.js": "/wordsthatneet/static/js/2.e4ee3b88.chunk.js",
+    "static/js/2.e4ee3b88.chunk.js.map": "/wordsthatneet/static/js/2.e4ee3b88.chunk.js.map",
     "index.html": "/wordsthatneet/index.html",
-    "precache-manifest.971c9f7fa6e8627ff29d3ecde15792e1.js": "/wordsthatneet/precache-manifest.971c9f7fa6e8627ff29d3ecde15792e1.js",
+    "precache-manifest.5a00a1d471e2db67577f2fd2c2c4a824.js": "/wordsthatneet/precache-manifest.5a00a1d471e2db67577f2fd2c2c4a824.js",
     "service-worker.js": "/wordsthatneet/service-worker.js",
-    "static/css/main.974578b4.chunk.css.map": "/wordsthatneet/static/css/main.974578b4.chunk.css.map",
+    "static/css/main.10ca8cf6.chunk.css.map": "/wordsthatneet/static/css/main.10ca8cf6.chunk.css.map",
     "static/media/logo.svg": "/wordsthatneet/static/media/logo.5d5d9eef.svg"
   }
 }
