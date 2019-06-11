@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3c905fad8cf7e20e1d16a382f2db71d1",
+    "revision": "d64cc36f99d750f924845662cbf97692",
     "url": "/wordsthatneet/index.html"
   },
   {
