@@ -84,7 +84,7 @@ class App extends React.Component {
   render(){
     return (
       <React.Fragment>
-        <h1 className="heading">働かない言葉たちメーカー</h1>
+        <h1 className="heading">はたらかない言葉たちメーカー</h1>
         <div className="input-field">
           <label>言葉</label>
           <textarea name="words" value={this.state.words} onChange={(e)=>this.handleChangeWords(e)} placeholder="ことば" />
@@ -112,7 +112,7 @@ class App extends React.Component {
         </div>
 
         <div id="container">
-          <div className="title">働かない言葉たち</div>
+          <div className="title">はたらかない言葉たち</div>
             <div id="canvas-container">
               <div id="canvas">
               <Words words={this.state.words_html} />
